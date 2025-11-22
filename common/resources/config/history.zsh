@@ -1,10 +1,20 @@
-# --- Configurações de Histórico para Comandos Únicos ---
+# --- Tamanho e Arquivo do Histórico ---
 
-# Não salva no histórico se o comando for igual ao anterior
-setopt HIST_IGNORE_DUPS
+# Define o arquivo de histórico (padrão, mas bom garantir)
+HISTFILE="$HOME/.zsh_history"
 
-# Ao salvar o histórico no arquivo, remove duplicatas antigas, mantendo a mais recente
-setopt HIST_SAVE_NO_DUPS
+# 2^13 = 8192: A potência de 2 mais próxima de 10.000
+export HISTSIZE=8192
+export SAVEHIST=8192
 
-# Ao navegar no histórico (seta para cima/baixo), pula os duplicados
-setopt HIST_FIND_NO_DUPS
+# --- Configurações Extras de Otimização ---
+
+# Se o histórico encher, remove os duplicados primeiro antes de apagar os antigos únicos
+setopt HIST_EXPIRE_DUPS_FIRST
+
+# Adiciona carimbo de data/hora no arquivo (útil para auditoria)
+setopt EXTENDED_HISTORY
+
+# Grava o comando no arquivo imediatamente, não espera o shell fechar
+# (Essencial se você usa múltiplos terminais/tmux)
+setopt INC_APPEND_HISTORY
