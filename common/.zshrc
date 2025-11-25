@@ -19,7 +19,8 @@ export MANPATH="/usr/local/man:$MANPATH"
 #   export EDITOR='nvim'
 # fi
 
-expor EDITOR='nvim'
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 # Compilation flags
 export ARCHFLAGS="-arch $(uname -m)"
@@ -27,27 +28,6 @@ export ARCHFLAGS="-arch $(uname -m)"
 zstyle :compinstall flename '/home/san/.zshrc'
 autoload -Uz compinit
 compinit
-
-export background="#0F172A"         
-export foreground="#E2E8F0"         
-export accent="#8B5CF6"             
-export black="#1E293B"              
-export red="#F43F5E"                
-export green="#22C55E"              
-export yellow="#FACC15"             
-export blue="#3B82F6"               
-export magenta="#A855F7"            
-export cyan="#22D3EE"               
-export white="#F1F5F9"               
-export bg="#0F172A"                 
-export color1="#E2E8F0"             
-export color2="#8B5CF6"             
-export color9="#F43F5E"             
-export color4="#FACC15"             
-export color5="#3B82F6"             
-export color6="#A855F7"             
-export color7="#22D3EE"             
-export color8="#F1F5F9"
 
 source ~/resources/custom/variables.zsh
 source ~/resources/custom/aliases.zsh
