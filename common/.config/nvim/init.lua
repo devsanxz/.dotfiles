@@ -1046,11 +1046,6 @@ require("lazy").setup({
 		},
 	},
 })
--- vim.cmd.colorscheme("sanxz2")
+vim.cmd.colorscheme("sanxz2")
 
-if not pcall(vim.cmd.colorscheme, "sanxz2") then
-	vim.cmd.colorscheme("default") -- Se falhar, usa o padrão
-end
-
--- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
