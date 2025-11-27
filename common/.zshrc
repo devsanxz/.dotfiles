@@ -25,7 +25,7 @@ export VISUAL='nvim'
 # Compilation flags
 export ARCHFLAGS="-arch $(uname -m)"
 
-zstyle :compinstall flename '/home/san/.zshrc'
+# zstyle :compinstall flename '/home/san/.zshrc'
 autoload -Uz compinit
 compinit
 
@@ -36,6 +36,6 @@ source ~/resources/custom/colors.zsh
 source ~/resources/custom/ls-colors.zsh
 source ~/resources/custom/PS1.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+# source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/resources/custom/theme-highlight.zsh
