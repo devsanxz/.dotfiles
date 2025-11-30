@@ -67,7 +67,7 @@ end
 -- ==========================================================
 
 -- --- Editor Base ---
-hl("Normal", c.white, c.black) -- Fundo preto, texto principal branco
+hl("Normal", c.violet_brilliant, c.black) -- Fundo preto, texto principal branco
 hl("NormalFloat", c.white, c.ui_bg)
 hl("SignColumn", nil, c.ui_bg)
 

@@ -61,7 +61,7 @@ end
 -- ==========================================================
 
 -- --- Editor Base ---
-hl("Normal", c.white, c.black)
+hl("Normal", c.violet_brilliant, c.black)
 hl("NormalFloat", c.white, c.ui_bg)
 hl("SignColumn", nil, c.ui_bg)
 
