@@ -12,7 +12,9 @@ Este repositório utiliza **GNU Stow** para gerenciar symlinks de forma modular 
 *   **`pi/`**: Configurações otimizadas para Raspberry Pi (ARM, Scaling Nativo, Leveza).
 
 ## 🎨 Tema SANXZ4
-Uma identidade visual unificada e proprietária, aplicada transversalmente:
+Uma identidade visual unificada e proprietária, aplicada transversalmente.
+> Consulte a [Teoria das Cores SANXZ](common/docs/SAN_COLORS.md) para detalhes técnicos sobre a paleta e filosofia.
+
 *   **Neovim:** Temas `sanxz4`, `sanxzmonored`, `sanxzwarmcool`, `sanxzcoolwarm`.
 *   **Hyprland & Waybar:** Variáveis globais centralizadas em `myColors.conf`.
 *   **Shell:** Zsh prompt e highlighting (Swap White/Violet).
